@@ -1,0 +1,28 @@
+-- order_details 테이블 생성
+CREATE TABLE order_details (
+	id INTEGER AUTO_INCREMENT, 	-- 아이디(자동으로 1씩 증가)
+	order_id INTEGER, 			-- 주문 아이디
+	product_id INTEGER, 			-- 상품 아이디
+	count INTEGER, 				-- 주문 수량
+	PRIMARY KEY (id), 			-- 기본키 지정: id
+	FOREIGN KEY (order_id) REFERENCES orders(id), 	-- 외래키 지정: order_id
+	FOREIGN KEY (product_id) REFERENCES products(id) -- 외래키 지정: product_id
+);
+
+-- order_details 데이터 삽입
+INSERT INTO order_details (order_id, product_id, count)
+VALUES
+	(1, 1, 2),
+	(1, 6, 2),
+	(2, 3, 1),
+	(2, 4, 1),
+	(3, 7, 2),
+	(3, 8, 2),
+	(4, 2, 3),
+	(4, 5, 4),
+	(4, 10, 5),
+	(5, 9, 2),
+	(6, 1, 3),
+	(7, 8, 2),
+	(7, 6, 1),
+	(8, 6, 3);

@@ -1,0 +1,22 @@
+-- products 테이블 생성
+CREATE TABLE products (
+	id INTEGER AUTO_INCREMENT, 	-- 아이디(자동으로 1씩 증가)
+	name VARCHAR(100), 			-- 상품명
+	price INTEGER, 				-- 가격
+	product_type VARCHAR(50), 		-- 상품 유형
+	PRIMARY KEY(id) 			-- 기본키 지정: id
+);
+
+-- products 데이터 삽입
+INSERT INTO products (name, price, product_type)
+VALUES
+	('우유 900ml', 1970, '냉장 식품'),
+	('참치 마요 120g', 4400, '냉장 식품'),
+	('달걀 감자 샐러드 500g', 6900, '냉장 식품'),
+	('달걀 듬뿍 샐러드 500g', 6900, '냉장 식품'),
+	('크림 치즈', 2180, '냉장 식품'),
+	('우유 식빵', 2900, '상온 식품'),
+	('샐러드 키트 6봉', 8900, '냉장 식품'),
+	('무항생제 특란 20구', 7200, '냉장 식품'),
+	('수제 크림 치즈 200g', 9000, '냉장 식품'),
+	('플레인 베이글', 1300, '냉장 식품');

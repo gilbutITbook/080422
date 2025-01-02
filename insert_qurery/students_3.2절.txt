@@ -1,0 +1,25 @@
+-- university DB 생성 및 진입
+CREATE DATABASE university;
+USE university;
+
+-- students 테이블 생성
+CREATE TABLE students (
+	id INTEGER, 			-- 아이디
+	nickname VARCHAR(50), 	-- 닉네임
+	math INTEGER, 			-- 수학 성적
+	english INTEGER, 		-- 영어 성적
+	programming INTEGER, 	-- 프로그래밍 성적
+	PRIMARY KEY (id) 		-- 기본키 지정: id
+);
+
+-- students 데이터 삽입
+INSERT INTO students (id, nickname, math, english, programming)
+VALUES
+	(1, 'Sparkles', 98, 96, 93),
+	(2, 'Soldier', 82, 66, 98),
+	(3, 'Lapooheart', 84, 70, 82),
+	(4, 'Slick', 87, 99, 98),
+	(5, 'Smile', 75, 73, 70),
+	(6, 'Jellyboo', 84, 82, 70),
+	(7, 'Bagel', 97, 91, 87),
+	(8, 'Queen', 99, 100, 88);

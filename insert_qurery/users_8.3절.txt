@@ -1,0 +1,14 @@
+-- users 테이블 생성
+CREATE TABLE users (
+	id INTEGER AUTO_INCREMENT, 		-- 아이디(자동으로 1씩 증가)
+	email VARCHAR(255) UNIQUE, 		-- 이메일(고유한 값만 허용)
+	nickname VARCHAR(255) UNIQUE, 	-- 닉네임(고유한 값만 허용)
+	PRIMARY KEY (id) 				-- 기본키 지정: id
+);
+
+-- users 데이터 삽입
+INSERT INTO users (email, nickname)
+VALUES
+	('sehongpark@cloudstudying.kr', '홍팍'),
+	('kuma@cloudstudying.kr', '쿠마'),
+	('hawk@naver.com', '호크');

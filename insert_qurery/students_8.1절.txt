@@ -1,0 +1,18 @@
+-- students 테이블 생성
+CREATE TABLE students (
+	id INTEGER AUTO_INCREMENT, 	-- 아이디(자동으로 1씩 증가)
+	gender VARCHAR(10), 			-- 성별
+	height DECIMAL(4, 1), 			-- 키
+	PRIMARY KEY (id) 			-- 기본키 지정: id
+);
+
+-- students 데이터 삽입
+INSERT INTO students (gender, height)
+VALUES
+	('male', 176.6),
+	('female', 165.5),
+	('female', 159.3),
+	('male', 172.8),
+	('female', 160.7),
+	('female', 170.2),
+	('male', 182.1);

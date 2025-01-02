@@ -1,0 +1,22 @@
+-- sales 테이블 생성
+CREATE TABLE sales (
+  id INTEGER AUTO_INCREMENT,  	-- 아이디(자동으로 1씩 증가)
+  city VARCHAR(50) NOT NULL,     -- 도시명
+  sale_date DATE NOT NULL,         -- 판매 날짜
+  amount INTEGER NOT NULL,      	-- 판매 금액
+  PRIMARY KEY (id)			-- 기본키 지정: id
+);
+
+-- sales 데이터 삽입
+INSERT INTO sales (city, sale_date, amount) 
+VALUES
+  ('Seoul', '2023-01-15', 1000),
+  ('Seoul', '2023-05-10', 2000),
+  ('Seoul', '2023-08-29', 2500),
+  ('Seoul', '2024-02-14', 4000),
+  ('Busan', '2023-03-05', 1500),
+  ('Busan', '2024-05-10', 1800),
+  ('Busan', '2024-07-20', 3000),
+  ('Incheon', '2023-11-25', 1200),
+  ('Incheon', '2024-03-19', 2200),
+  ('Incheon', '2024-09-12', 3300);

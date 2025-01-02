@@ -1,0 +1,20 @@
+-- payments 테이블 생성
+CREATE TABLE payments (
+	id INTEGER AUTO_INCREMENT, 	-- 아이디(자동으로 1씩 증가)
+	amount INTEGER, 			-- 결제 금액
+	payment_type VARCHAR(50), 	-- 결제 유형
+	order_id INTEGER, 			-- 주문 아이디
+	PRIMARY KEY (id), 			-- 기본키 지정: id
+	FOREIGN KEY (order_id) REFERENCES orders(id) -- 외래키 지정: order_id
+);
+
+-- payments 데이터 삽입
+INSERT INTO payments (amount, payment_type, order_id)
+VALUES
+	(9740, 'SAMSONG CARD', 1),
+	(13800, 'SAMSONG CARD', 2),
+	(32200, 'LOTTI CARD', 3),
+	(28420, 'COCOA PAY', 4),
+	(18000, 'COCOA PAY', 5),
+	(5910, 'LOTTI CARD', 6),
+	(17300, 'LOTTI CARD', 7);

@@ -1,0 +1,16 @@
+-- students 테이블 생성
+CREATE TABLE students (
+	id INTEGER AUTO_INCREMENT, 	-- 아이디(자동으로 1씩 증가)
+	name VARCHAR(30), 			-- 이름
+	score INTEGER, 				-- 성적
+	PRIMARY KEY (id) 			-- 기본키 지정: id
+);
+
+-- students 데이터 삽입
+INSERT INTO students (name, score)
+VALUES
+	('엘리스', 85),
+	('밥', 78),
+	('찰리', 92),
+	('데이브', 65),
+	('이브', 88);

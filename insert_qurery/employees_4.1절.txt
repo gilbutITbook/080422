@@ -1,0 +1,24 @@
+-- employees 테이블 생성
+CREATE TABLE employees (
+	id INTEGER, 				-- 아이디
+	name VARCHAR(50), 			-- 직원명
+	department VARCHAR(200), 		-- 소속 부서
+	PRIMARY KEY (id) 			-- 기본키 지정: id
+);
+
+-- employees 데이터 삽입
+INSERT INTO employees (id, name, department)
+VALUES
+	(1, 'Alice', 'Sales'),
+	(2, 'Bob', 'Marketing'),
+	(3, 'Carol', NULL),
+	(4, 'Dave', 'Marketing'),
+	(5, 'Joseph', 'Sales');
+
+-- 모든 직원 수 세기
+SELECT COUNT(*)
+FROM employees;
+
+-- 부서에 소속된 직원 수 세기
+SELECT COUNT(department)
+FROM employees;
