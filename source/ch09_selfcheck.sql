@@ -2,7 +2,7 @@
 USE market;
 
 -- 1. 전체 사용자의 1인당 평균 결제 금액
-SELECT SUM(amount) / (SELECT COUNT(*) FROM users) '1인당 평균 결제 금액'
+SELECT SUM(amount) / (SELECT COUNT(*) FROM users) AS '1인당 평균 결제 금액'
 FROM payments;
 
 -- 2. 전체 사용자의 1인당 평균 결제 금액
