@@ -136,7 +136,7 @@ VALUES
 CREATE TABLE orders (
 	id INTEGER AUTO_INCREMENT, 	-- 아이디(자동으로 1씩 증가)
 	status VARCHAR(50), 		-- 주문 상태
-	created_at DATETIME, 		-- 주문 생성 시각
+	created_at DATETIME, 		-- 주문 일시
 	user_id INTEGER, 			-- 사용자 아이디
 	PRIMARY KEY (id), 			-- 기본키 지정: id
 	FOREIGN KEY (user_id) REFERENCES users(id) -- 외래키 지정: user_id
