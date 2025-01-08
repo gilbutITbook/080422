@@ -25,7 +25,7 @@ FROM student_records;
 CREATE TABLE user_profiles (
 	id INTEGER, 				-- 아이디(표준 정수)
 	email VARCHAR(255), 		-- 이메일(가변 길이 문자: 최대 255자)
-	phone_number CHAR(15), 		-- 전화번호(고정 길이 문자: 15자)
+	phone_number CHAR(13), 		-- 전화번호(고정 길이 문자: 13자)
 	self_introduction TEXT, 	-- 자기소개(긴 문자열: 최대 64KB)
 	profile_picture MEDIUMBLOB, -- 프로필 사진(파일: 최대 16MB)
 	gender ENUM('남', '여'), 		-- 성별(선택 목록 중 택 1)
