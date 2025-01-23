@@ -2,7 +2,7 @@
 
 이 저장소에는 <코딩 자율학습 SQL 데이터베이스 입문>의 예제 소스 코드가 담겨 있습니다.
 
-![cover image_코자 spring boot_입체](https://github.com/gilbutITbook/080354/assets/6995518/9c6e97fc-5a1c-4856-98a8-8a16eb2c85e2)
+![Image](https://github.com/user-attachments/assets/0c597805-69ca-4748-a71a-684e33e4a25e)
 
 ## 예제 코드 다운로드 및 확인 방법
 
